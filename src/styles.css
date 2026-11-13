@@ -189,3 +189,12 @@ button,a{touch-action:manipulation}
 @media(max-width:900px){.auth-layout{grid-template-columns:minmax(0,1fr) minmax(320px,420px);gap:25px;padding-inline:20px}.auth-card{padding:24px}.auth-visual h1{font-size:clamp(32px,5vw,48px)}}
 @media(max-width:680px){.signin-nav{padding:8px 9px;font-size:10px}.auth-header{height:66px;padding:0 14px}.auth-layout{display:flex;flex-direction:column;align-items:stretch;gap:24px;padding:28px 14px 38px;min-height:0}.auth-visual h1{font-size:36px;letter-spacing:-1.6px;margin:12px 0}.auth-visual>p{font-size:12px}.auth-role-list{grid-template-columns:1fr;gap:8px;margin-top:18px}.auth-role-list>div{padding:9px 11px}.auth-card{padding:21px 17px;border-radius:15px}.auth-card-top h2{font-size:23px}.admin-preview-main{padding:30px 14px}.admin-preview-main h1{font-size:29px}.admin-stat-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.admin-stat-grid article{padding:14px}.admin-preview-card{padding:15px}.admin-preview-card>div{font-size:10px}}
 @media(max-width:360px){.auth-visual h1{font-size:31px}.auth-card{padding:18px 13px}.admin-stat-grid b{font-size:23px}}
+
+/* Interactive account-role selector */
+.auth-role-list>button{width:100%;display:grid;grid-template-columns:43px 1fr;grid-template-rows:auto auto;column-gap:12px;align-items:center;text-align:left;padding:12px 14px;border:1px solid #eee5de;background:#fff;border-radius:12px;color:#29231f;cursor:pointer;font:inherit;transition:border-color .18s,background .18s,box-shadow .18s}
+.auth-role-list>button:hover{border-color:#f2a58c;background:#fffaf6;box-shadow:0 4px 14px #d96a3a10}
+.auth-role-list>button.selected{border-color:#f2a58c;background:#fff5ef;box-shadow:0 6px 20px #d96a3a0b}
+.auth-role-list>button:focus-visible{outline:3px solid #f15b3266;outline-offset:3px}
+.auth-role-list>button>span{grid-row:1/3;width:40px;height:40px;display:grid;place-items:center;background:#fff0e7;border-radius:12px;font-size:20px}
+.auth-role-list>button b{font:800 12px Manrope}
+.auth-role-list>button small{font-size:10px;color:#968980;margin-top:3px}
