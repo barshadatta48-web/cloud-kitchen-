@@ -15,3 +15,128 @@
 
 /* Customer profile drawer */
 .customer-profile-content{padding:28px 4px;overflow:auto}.customer-avatar{width:66px;height:66px;border-radius:50%;display:grid;place-items:center;margin:0 auto 13px;background:#2c6555;color:#fff;font:800 26px Manrope}.customer-profile-content h3{text-align:center;font:800 19px Manrope;margin:0 0 7px}.customer-profile-content>p{text-align:center;color:#958980;font-size:11px;line-height:1.6;margin:0 auto 24px;max-width:280px}.customer-profile-content label{display:flex;flex-direction:column;gap:7px;margin:15px 0;color:#51463e;font-size:10px;font-weight:800}.customer-profile-content input{width:100%;box-sizing:border-box;border:1px solid #e9e0d8;background:#fffdfa;border-radius:8px;padding:12px;font:500 12px 'DM Sans';color:#332c27;outline:none}.customer-profile-content input:focus{border-color:#e99476;box-shadow:0 0 0 3px #f15b3212}.customer-profile-content .checkout-btn{margin-top:22px}.customer-profile-content .local-warning{margin-top:16px}
+
+/* Responsive layout refinements: wide desktop, tablet, and compact mobile */
+html,body,#root{width:100%;min-height:100%;overflow-x:hidden}
+img,svg{max-width:100%}
+button,a{touch-action:manipulation}
+@media (max-width:1100px){
+ .nav-wrap{gap:17px;padding-inline:22px}
+ .location{gap:5px}
+ nav{gap:14px}
+ .hero{padding-inline:38px;grid-template-columns:1.05fr .95fr}
+ .hero-art>img{width:min(30vw,320px);height:min(30vw,320px)}
+ .hero-orbit{width:min(37vw,380px);height:min(37vw,380px)}
+ .kitchen-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:15px}
+}
+@media (max-width:820px){
+ .topbar{height:auto;min-height:72px}
+ .nav-wrap{min-height:72px;height:auto;flex-wrap:wrap;gap:12px;padding:12px 20px}
+ .brand{font-size:21px}
+ .location{margin-left:auto}
+ .searchbox{order:3;flex:1 1 100%;min-width:0}
+ .nav-wrap nav{margin-left:auto}
+ main{padding-inline:20px}
+ .hero{grid-template-columns:1fr  .9fr;padding:34px 26px;min-height:390px}
+ .hero h1{font-size:clamp(42px,6vw,60px);letter-spacing:-2.8px}
+ .hero-art{height:300px;min-width:0}
+ .hero-art>img{width:min(34vw,270px);height:min(34vw,270px)}
+ .hero-orbit{width:min(42vw,330px);height:min(42vw,330px)}
+ .floating-card{padding:8px 10px}
+ .perks{grid-template-columns:repeat(2,minmax(0,1fr));gap:16px 8px}
+ .perks>div{justify-content:flex-start;border:0}
+ .kitchen-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .partner-main{padding-inline:18px}
+}
+@media (max-width:600px){
+ .topbar{position:sticky;top:0}
+ .nav-wrap{padding:10px 14px;gap:10px}
+ .brand{font-size:19px;gap:7px}
+ .brand-mark{width:34px;height:34px;border-radius:11px}
+ .brand small{font-size:7px;letter-spacing:1.3px}
+ .location{display:none}
+ .nav-wrap nav{order:2;width:auto;margin-left:auto;gap:8px}
+ .nav-wrap nav>a{display:none}
+ .icon-btn{width:35px;height:35px}
+ .profile{width:32px;height:32px;flex:0 0 32px}
+ .partner-nav{padding:9px 10px!important;font-size:10px!important;white-space:nowrap}
+ .searchbox{order:3;flex:1 1 100%;height:40px}
+ main{padding-inline:13px}
+ .hero{display:flex;flex-direction:column;align-items:stretch;padding:30px 20px 14px;min-height:0;border-radius:0 0 18px 18px}
+ .hero-copy{width:100%}
+ .hero h1{font-size:clamp(42px,11vw,56px);letter-spacing:-2.8px;margin:15px 0 12px}
+ .hero-copy>p{font-size:12px;line-height:1.65}
+ .hero-actions{gap:12px;flex-wrap:wrap;margin-top:18px}
+ .primary-btn{padding:12px 14px;font-size:11px}
+ .hero-proof{flex-wrap:wrap;gap:7px;margin-top:19px}
+ .hero-art{height:245px;margin-top:15px;width:100%}
+ .hero-art>img{width:min(62vw,220px);height:min(62vw,220px)}
+ .hero-orbit{width:min(74vw,270px);height:min(74vw,270px)}
+ .rating-float{left:0;top:17px}
+ .delivery-float{right:0;bottom:12px}
+ .hero-sticker{right:12px;top:4px;width:53px;height:53px;font-size:8px}
+ .perks{padding:19px 2px;gap:14px 6px}
+ .perks>div{gap:7px;min-width:0}
+ .perk-icon{width:31px;height:31px;flex:0 0 31px}
+ .perks b{font-size:9px}
+ .perks small{font-size:8px;line-height:1.35}
+ .offer-banner{padding:20px 16px;gap:8px;margin:24px 0 38px}
+ .offer-banner h2{font-size:clamp(18px,5vw,23px)}
+ .offer-banner p{font-size:9px;line-height:1.5}
+ .offer-art{width:82px;height:82px;margin:0;flex:0 0 82px}
+ .offer-art span{font-size:34px}
+ .offer-spark{right:8px;top:3px}
+ .section-heading{align-items:flex-start;gap:8px}
+ .section-heading>div{min-width:0}
+ .section-heading h2{font-size:clamp(22px,6vw,27px);line-height:1.15}
+ .section-heading p{font-size:9px;line-height:1.5}
+ .filter-btn{font-size:0;flex:0 0 auto;padding:9px}
+ .category-row{margin-inline:-13px;padding:18px 13px 14px;gap:7px}
+ .category{padding:8px 11px;font-size:10px}
+ .results-line{flex-wrap:wrap}
+ .kitchen-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+ .food-image{height:clamp(105px,30vw,145px)}
+ .kitchen-info{padding:10px 9px 8px}
+ .kitchen-title{align-items:flex-start}
+ .kitchen-title h3{font-size:clamp(10px,2.8vw,12px);overflow-wrap:anywhere}
+ .rating{font-size:8px;padding:4px 5px}
+ .card-meta{gap:4px;font-size:8px;flex-wrap:wrap}
+ .view-menu{width:calc(100% - 18px);margin:0 9px 9px}
+ .why-grid{grid-template-columns:1fr}
+ .bottom-cta{padding:20px 17px;display:block}
+ .bottom-cta button{margin-top:14px}
+ footer{padding-inline:13px;gap:10px;flex-wrap:wrap}
+ .drawer{width:min(100%,430px);padding:18px}
+ .menu-modal{width:100%}
+ .partner-top{padding-inline:13px}
+ .partner-main{padding:16px 12px 32px}
+ .partner-layout{grid-template-columns:minmax(0,1fr);gap:12px}
+ .partner-aside{position:relative;top:auto;min-height:0;padding:21px}
+ .partner-aside h1{font-size:31px}
+ .partner-form-card,.dashboard-card{padding:17px 14px}
+ .step-progress{grid-template-columns:repeat(4,minmax(0,1fr))}
+ .step-progress>div{min-width:0}
+ .step-progress span{overflow-wrap:anywhere}
+ .dashboard-grid{grid-template-columns:minmax(0,1fr)}
+ .profile-data{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .field-two{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .shops-page{padding:16px 12px}
+ .customer-profile-content{padding-inline:2px}
+}
+@media (max-width:360px){
+ .nav-wrap{padding-inline:10px}
+ .brand{font-size:17px}
+ .partner-nav{font-size:9px!important;padding:8px!important}
+ .hero{padding-inline:15px}
+ .hero h1{font-size:40px}
+ .delivery-note{font-size:9px}
+ .perks b{font-size:8px}
+ .kitchen-grid{gap:8px}
+ .field-two{grid-template-columns:1fr}
+ .step-progress>div{font-size:6px}
+ .step-progress i{width:20px;height:20px}
+}
+@media (min-width:601px) and (max-width:820px){
+ .nav-wrap nav{flex:0 0 auto}
+ .partner-nav{font-size:10px!important;padding:9px 11px!important}
+}
