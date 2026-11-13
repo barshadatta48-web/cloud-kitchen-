@@ -140,3 +140,52 @@ button,a{touch-action:manipulation}
  .nav-wrap nav{flex:0 0 auto}
  .partner-nav{font-size:10px!important;padding:9px 11px!important}
 }
+
+/* Three-role authentication frontend */
+.signin-nav{border:1px solid #f0e5dc;background:#fff;border-radius:9px;padding:9px 12px;color:#594b42;font-size:11px;font-weight:800;white-space:nowrap}
+.signin-nav:hover{border-color:#f2a58c;color:#e85b35}
+.admin-entry{border:0;background:none;color:#82766e;font-size:10px;font-weight:700;cursor:pointer;padding:0}
+.auth-page,.admin-preview{min-height:100vh;background:#fffaf6;color:#29231f}
+.auth-header{height:76px;padding:0 max(24px,calc((100% - 1160px)/2));display:flex;align-items:center;justify-content:space-between;background:#fff;border-bottom:1px solid #f0e8e1}
+.auth-layout{max-width:1160px;margin:0 auto;padding:48px 26px 60px;display:grid;grid-template-columns:minmax(0,1fr) minmax(360px,470px);gap:clamp(30px,7vw,100px);align-items:center;min-height:calc(100vh - 130px)}
+.auth-visual h1{font:800 clamp(36px,4.5vw,58px)/1.08 Manrope;letter-spacing:-2.5px;max-width:570px;margin:18px 0 15px}
+.auth-visual>p{font-size:14px;line-height:1.8;color:#81756c;max-width:470px}
+.auth-role-list{display:grid;gap:11px;margin-top:30px;max-width:430px}
+.auth-role-list>div{display:grid;grid-template-columns:43px 1fr;grid-template-rows:auto auto;column-gap:12px;align-items:center;padding:12px 14px;border:1px solid #eee5de;background:#fff;border-radius:12px}
+.auth-role-list>div.selected{border-color:#f2a58c;background:#fff5ef;box-shadow:0 6px 20px #d96a3a0b}
+.auth-role-list>div>span{grid-row:1/3;width:40px;height:40px;display:grid;place-items:center;background:#fff0e7;border-radius:12px;font-size:20px}
+.auth-role-list b{font:800 12px Manrope}.auth-role-list small{font-size:10px;color:#968980;margin-top:3px}
+.auth-card{background:#fff;border:1px solid #f0e6de;border-radius:20px;padding:30px;box-shadow:0 18px 55px #5c32140d}
+.auth-card-top h2{font:800 26px Manrope;letter-spacing:-.8px;margin:10px 0 5px}
+.auth-card-top>p{font-size:11px;color:#94877e;margin:0 0 20px}
+.auth-mode{display:grid;grid-template-columns:1fr 1fr;background:#f8f3ef;border-radius:9px;padding:4px;margin-bottom:20px}
+.auth-mode button{border:0;background:transparent;border-radius:7px;padding:10px;font-size:11px;font-weight:800;color:#8e8178}
+.auth-mode button.active{background:#fff;color:#e65b35;box-shadow:0 2px 8px #4c2a180d}
+.auth-card form{display:grid;gap:14px}
+.auth-card label{display:grid;gap:7px;font-size:10px;font-weight:800;color:#51463e}
+.auth-card input{width:100%;min-width:0;border:1px solid #e9e0d8;background:#fffdfa;border-radius:9px;padding:12px;font:500 12px 'DM Sans';color:#332c27;outline:0}
+.auth-card input:focus{border-color:#e99476;box-shadow:0 0 0 3px #f15b3212}
+.password-field{display:flex;align-items:center;border:1px solid #e9e0d8;border-radius:9px;background:#fffdfa;padding-right:10px}
+.password-field input{border:0;background:transparent;box-shadow:none!important}
+.password-field button{border:0;background:none;color:#e65b35;font-size:10px;font-weight:800}
+.forgot-link{justify-self:end;border:0;background:none;color:#e65b35;font-size:10px;font-weight:700;padding:0}
+.auth-submit{width:100%;border:0;border-radius:10px;background:#f15b32;color:#fff;padding:14px;display:flex;align-items:center;justify-content:center;gap:10px;font-size:12px;font-weight:800;margin-top:3px}
+.auth-notice{margin-top:13px;padding:11px 12px;background:#fff5e9;border:1px solid #f4dfc6;border-radius:9px;color:#80552e;font-size:10px;line-height:1.6}
+.auth-extra{border-top:1px solid #f0e9e3;margin-top:20px;padding-top:17px;display:grid;gap:9px;font-size:10px;color:#8e8178}
+.auth-extra button{justify-self:start;border:0;background:none;color:#e65b35;font-size:11px;font-weight:800;display:flex;align-items:center;gap:6px;padding:0}
+.auth-security{margin-top:19px;padding-top:14px;border-top:1px solid #f0e9e3;color:#94877e;font-size:9px;line-height:1.7;display:flex;align-items:flex-start;gap:8px}
+.auth-footer{text-align:center;padding:16px;color:#a2958b;font-size:9px;border-top:1px solid #f0e9e3}
+.admin-preview-main{max-width:1100px;margin:auto;padding:48px 24px}
+.admin-preview-main h1{font:800 36px Manrope;margin:12px 0 7px}
+.admin-preview-main>p{color:#8c8077;font-size:12px}
+.admin-stat-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin:28px 0}
+.admin-stat-grid article,.admin-preview-card{background:#fff;border:1px solid #eee5de;border-radius:13px;padding:19px}
+.admin-stat-grid small,.admin-stat-grid span{display:block;color:#91857c;font-size:10px}
+.admin-stat-grid b{display:block;font:800 28px Manrope;margin:10px 0}
+.admin-preview-card h2{font:800 18px Manrope;margin:0 0 15px}
+.admin-preview-card>div{padding:14px 0;border-top:1px solid #f0e9e3;display:flex;justify-content:space-between;gap:12px;font-size:11px}
+.preview-tag{color:#9a6a2d;background:#fff5e5;border-radius:20px;padding:4px 8px;font-size:9px;white-space:nowrap}
+.admin-preview-main>.secondary-action{margin-top:20px}
+@media(max-width:900px){.auth-layout{grid-template-columns:minmax(0,1fr) minmax(320px,420px);gap:25px;padding-inline:20px}.auth-card{padding:24px}.auth-visual h1{font-size:clamp(32px,5vw,48px)}}
+@media(max-width:680px){.signin-nav{padding:8px 9px;font-size:10px}.auth-header{height:66px;padding:0 14px}.auth-layout{display:flex;flex-direction:column;align-items:stretch;gap:24px;padding:28px 14px 38px;min-height:0}.auth-visual h1{font-size:36px;letter-spacing:-1.6px;margin:12px 0}.auth-visual>p{font-size:12px}.auth-role-list{grid-template-columns:1fr;gap:8px;margin-top:18px}.auth-role-list>div{padding:9px 11px}.auth-card{padding:21px 17px;border-radius:15px}.auth-card-top h2{font-size:23px}.admin-preview-main{padding:30px 14px}.admin-preview-main h1{font-size:29px}.admin-stat-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.admin-stat-grid article{padding:14px}.admin-preview-card{padding:15px}.admin-preview-card>div{font-size:10px}}
+@media(max-width:360px){.auth-visual h1{font-size:31px}.auth-card{padding:18px 13px}.admin-stat-grid b{font-size:23px}}
