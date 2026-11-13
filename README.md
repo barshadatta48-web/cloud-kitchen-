@@ -1,4 +1,4 @@
-# CraveKart — Cloud Kitchen Marketplace
+# ComboCloud — Cloud Kitchen Marketplace
 
 A responsive food discovery and ordering frontend inspired by modern food-delivery marketplaces.
 
