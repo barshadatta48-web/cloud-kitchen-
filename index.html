@@ -1,2 +1,49 @@
 <!doctype html>
-<html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="theme-color" content="#fff8f2"/><meta name="description" content="Discover neighbourhood cloud kitchens and order delicious food delivered fresh."/><title>CraveKart — Food, made closer</title></head><body><div id="root"></div><script type="module" src="/src/main.jsx"></script></body></html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#fff8f2" />
+    <meta name="color-scheme" content="light" />
+    <meta name="description" content="Discover CraveKart, a cloud kitchen food marketplace demo. Explore cuisines, browse kitchen menus, build your food bag and preview a simple food-ordering experience." />
+    <meta name="keywords" content="CraveKart, cloud kitchen, food marketplace, online food ordering, food delivery app, restaurant discovery, kitchen marketplace" />
+    <meta name="author" content="CraveKart" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="CraveKart" />
+    <meta property="og:title" content="CraveKart — Discover cloud kitchens and good food" />
+    <meta property="og:description" content="Explore cuisines, browse kitchen menus and build your food bag with CraveKart's cloud kitchen marketplace demo." />
+    <meta property="og:image" content="https://images.unsplash.com/photo-1547592180-85f173990554?w=1200&amp;q=85" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="CraveKart — Food, made closer" />
+    <meta name="twitter:description" content="Discover cloud kitchens, explore menus and find your next favourite meal." />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://images.unsplash.com" />
+    <title>CraveKart — Cloud Kitchen Marketplace &amp; Food Discovery</title>
+    <script>
+      (function () {
+        var canonical = document.createElement('link');
+        canonical.rel = 'canonical';
+        canonical.href = window.location.origin + window.location.pathname;
+        document.head.appendChild(canonical);
+        var schema = {
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "name": "CraveKart",
+          "description": "A cloud kitchen marketplace demo for discovering food, browsing menus and building an order.",
+          "url": window.location.origin
+        };
+        var script = document.createElement('script');
+        script.type = 'application/ld+json';
+        script.text = JSON.stringify(schema);
+        document.head.appendChild(script);
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
