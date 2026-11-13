@@ -1,4 +1,4 @@
-import React,{useEffect,useMemo,useState} from 'react';
+import React,{useMemo,useState} from 'react';
 import {Search,MapPin,ShoppingBag,Heart,Clock3,Star,Plus,Minus,X,ArrowRight,ChevronDown,SlidersHorizontal,Bike,ShieldCheck,Sparkles,Leaf,CheckCircle2,UtensilsCrossed} from 'lucide-react';
 const categories=[['All','🍽️'],['Biryani','🍛'],['Pizza','🍕'],['Burgers','🍔'],['North Indian','🥘'],['Chinese','🥡'],['Healthy','🥗'],['Desserts','🍰']];
 const kitchens=[
@@ -45,7 +45,7 @@ function PartnerPortal({onBack}){
  const [shop,setShop]=useState({name:'',address:'',city:'',state:'',pincode:'',phone:'',opening:'09:00',closing:'22:00'});
  const [editingShop,setEditingShop]=useState(-1),[message,setMessage]=useState('');
  const update=(key,value)=>setProfile(p=>({...p,[key]:value}));
- const save=(next=profile)=>{localStorage.setItem('combocloud_partner_profile',JSON.stringify(next));setProfile(next);};
+ const save=(next=profile)=>{const {password,...safeProfile}=next;localStorage.setItem('combocloud_partner_profile',JSON.stringify(safeProfile));setProfile(next);};
  const notify=m=>{setMessage(m);setTimeout(()=>setMessage(''),2600)};
  const gstValid=/^[0-9]{2}[A-Z]{5}[0-9]{4}[A-Z][1-9A-Z]Z[0-9A-Z]$/.test(profile.gstin.toUpperCase());
  const goNext=()=>{if(step===0&&(!profile.owner.trim()||!profile.email.includes('@')||profile.phone.replace(/\D/g,'').length<10||profile.password.length<8)){notify('Enter valid owner details and a password of at least 8 characters.');return}
